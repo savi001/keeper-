@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #eee;
+background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  padding: 0 16px;
+}
+.main{
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 5px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  display: inline-block;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #000000;
+  border: none;
+  width: 40px;
+  height: 42px;
+  cursor: pointer;
+  outline: none;
+  background-color: #f5ba13;
+  border-radius: 100%;
+}
+
+
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.HeaderButton{     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    display: inline-block;    
+}
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+}
+
+
+
+.nav-item {
+  padding: 0 15px 0 15px;
+
+}
+.active{
+  color: #460C68
+}
+.social{
+ color: black;
+}
+.btn-outline-warning{
+  padding: 2px;
+  margin: 0 10px;
+}
+.username{
+  color: #A8D1D1;
+  font-size:1.5rem;
+  font-family: 'Special Elite', cursive;
+  margin-top: 20px;
+
+
+}
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+.footer{
+  position:absolute;
+left:0;
+bottom:0;
+right:0;
+}
+.mainfooter{
+  padding-bottom:60px;
+}
